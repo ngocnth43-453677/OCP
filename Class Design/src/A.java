@@ -13,6 +13,9 @@ class C extends B
     private C(){ super();
     } // C1
     public C(String s){  this();  System.out.println("C :"+s);  } // C2
-    public C(int i){} // C3
+    public C(int i){
+        this("C");
+        System.out.println("C :"+i);
+    } // C3
 }
 
